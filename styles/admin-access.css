@@ -1,0 +1,63 @@
+/* ============================================
+   HIDDEN ADMIN ACCESS BUTTON
+   ============================================ */
+
+.admin-access-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #2c1a10 0%, #5a3e2b 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(44, 26, 16, 0.4);
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    pointer-events: none;
+}
+
+.admin-access-btn.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.admin-access-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 30px rgba(44, 26, 16, 0.6);
+}
+
+.admin-access-btn svg {
+    animation: lockPulse 2s ease-in-out infinite;
+}
+
+@keyframes lockPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Copyright text hint */
+#copyrightText {
+    cursor: help;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+#copyrightText:hover {
+    color: var(--primary);
+}

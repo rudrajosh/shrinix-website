@@ -1,0 +1,762 @@
+/* ========================================
+   ENHANCED ARTISAN LOADER STYLES
+   All 10 Premium Features
+   ======================================== */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c1a10 0%, #5a3e2b 50%, #3d2817 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+    animation: loaderFadeOut 0.8s ease-in-out 6s forwards;
+    perspective: 1000px;
+}
+
+@keyframes loaderFadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+/* ========================================
+   SKIP & MUTE BUTTONS
+   ======================================== */
+
+.skip-loader,
+.mute-loader {
+    position: absolute;
+    top: 2rem;
+    background: rgba(245, 242, 237, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(245, 242, 237, 0.2);
+    color: rgba(245, 242, 237, 0.8);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInButton 0.5s ease-out 2s forwards;
+    z-index: 10000;
+}
+
+.skip-loader {
+    right: 2rem;
+}
+
+.mute-loader {
+    right: 8rem;
+}
+
+.skip-loader:hover,
+.mute-loader:hover {
+    background: rgba(245, 242, 237, 0.2);
+    border-color: rgba(245, 242, 237, 0.4);
+    color: rgba(245, 242, 237, 1);
+    transform: translateY(-2px);
+}
+
+.skip-loader:active,
+.mute-loader:active {
+    transform: translateY(0);
+}
+
+@keyframes fadeInButton {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   CULTURAL BACKGROUND PATTERNS
+   ======================================== */
+
+.cultural-patterns {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.mandala-pattern {
+    width: 600px;
+    height: 600px;
+    animation: rotatePattern 60s linear infinite;
+}
+
+.pattern-circle {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: drawPattern 4s ease-out forwards;
+}
+
+.pattern-circle.delay-1 {
+    animation-delay: 1s;
+}
+
+.pattern-circle.delay-2 {
+    animation-delay: 1.5s;
+}
+
+.pattern-circle.delay-3 {
+    animation-delay: 2s;
+}
+
+.pattern-circle.delay-4 {
+    animation-delay: 2.5s;
+}
+
+.pattern-petal {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: drawPattern 2s ease-out 3s forwards;
+}
+
+@keyframes drawPattern {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes rotatePattern {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========================================
+   ADVANCED PARTICLE SYSTEM (3 LAYERS)
+   ======================================== */
+
+.particles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particles-back {
+    z-index: 1;
+    filter: blur(2px);
+}
+
+.particles-mid {
+    z-index: 3;
+    filter: blur(1px);
+}
+
+.particles-front {
+    z-index: 5;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    animation: float 8s infinite ease-in-out;
+    opacity: 0;
+}
+
+/* Wood Shavings - Larger, irregular */
+.wood-shaving {
+    width: 6px;
+    height: 4px;
+    background: rgba(139, 111, 71, 0.4);
+    border-radius: 3px;
+}
+
+.wood-shaving:nth-child(1) {
+    left: 15%;
+    animation-delay: 0s;
+    animation-duration: 9s;
+}
+
+.wood-shaving:nth-child(2) {
+    left: 75%;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+/* Clay Dust - Small, round */
+.clay-dust {
+    width: 3px;
+    height: 3px;
+    background: rgba(160, 130, 109, 0.3);
+}
+
+.clay-dust:nth-child(3) {
+    left: 35%;
+    animation-delay: 1s;
+    animation-duration: 8s;
+}
+
+.clay-dust:nth-child(4) {
+    left: 65%;
+    animation-delay: 3s;
+    animation-duration: 11s;
+}
+
+/* Thread Fibers - Thin, elongated */
+.thread-fiber {
+    width: 2px;
+    height: 8px;
+    background: rgba(245, 242, 237, 0.4);
+    border-radius: 1px;
+}
+
+.thread-fiber:nth-child(1) {
+    left: 20%;
+    animation-delay: 0.5s;
+    animation-duration: 7.5s;
+}
+
+.thread-fiber:nth-child(2) {
+    left: 50%;
+    animation-delay: 1.5s;
+    animation-duration: 9.5s;
+}
+
+.thread-fiber:nth-child(3) {
+    left: 80%;
+    animation-delay: 2.5s;
+    animation-duration: 8.5s;
+}
+
+/* Interactive Particles - React to cursor */
+.interactive-particle {
+    width: 4px;
+    height: 4px;
+    background: rgba(245, 242, 237, 0.6);
+    transition: transform 0.3s ease-out;
+}
+
+.interactive-particle:nth-child(1) {
+    left: 25%;
+    animation-delay: 0.8s;
+    animation-duration: 7s;
+}
+
+.interactive-particle:nth-child(2) {
+    left: 55%;
+    animation-delay: 1.8s;
+    animation-duration: 8s;
+}
+
+.interactive-particle:nth-child(3) {
+    left: 85%;
+    animation-delay: 2.8s;
+    animation-duration: 9s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(50vh) translateX(30px) rotate(180deg);
+    }
+
+    90% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(-10vh) translateX(-30px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ========================================
+   LOADER CONTENT WITH 3D DEPTH
+   ======================================== */
+
+.loader-content {
+    text-align: center;
+    color: var(--secondary);
+    position: relative;
+    z-index: 4;
+    transition: transform 0.3s ease-out;
+    transform-style: preserve-3d;
+}
+
+/* Layered Parallax Effect */
+.craft-animation {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    transform: translateZ(50px);
+    transition: transform 0.3s ease-out;
+}
+
+.craft-animation:hover {
+    transform: translateZ(50px) scale(1.05);
+}
+
+/* ========================================
+   MULTIPLE CRAFT ANIMATIONS
+   ======================================== */
+
+.craft-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 20px rgba(245, 242, 237, 0.3));
+    transition: all 0.3s ease;
+}
+
+.craft-svg.hidden {
+    display: none;
+}
+
+/* Pottery Glow on Hover */
+.pottery-svg:hover,
+.loom-svg:hover,
+.carving-svg:hover,
+.mandala-svg:hover {
+    filter: drop-shadow(0 0 30px rgba(245, 242, 237, 0.6));
+}
+
+/* SVG Path Drawing Animation */
+.draw-path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: drawPath 3s ease-out forwards;
+    filter: drop-shadow(0 0 3px rgba(245, 242, 237, 0.5));
+}
+
+@keyframes drawPath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Decorative Lines */
+.draw-line {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: drawLine 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.draw-line.delay-1 {
+    animation-delay: 2s;
+}
+
+.draw-line.delay-2 {
+    animation-delay: 2.3s;
+}
+
+.draw-line.delay-3 {
+    animation-delay: 2.6s;
+}
+
+.draw-line.delay-4 {
+    animation-delay: 2.9s;
+}
+
+.draw-line.delay-5 {
+    animation-delay: 3.2s;
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+/* Texture Dots */
+.fade-dot {
+    opacity: 0;
+    animation: fadeDot 0.5s ease-out forwards;
+}
+
+.fade-dot.delay-4 {
+    animation-delay: 3s;
+}
+
+.fade-dot.delay-5 {
+    animation-delay: 3.3s;
+}
+
+@keyframes fadeDot {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Texture Overlay */
+.texture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        repeating-linear-gradient(90deg,
+            transparent,
+            transparent 2px,
+            rgba(139, 111, 71, 0.03) 2px,
+            rgba(139, 111, 71, 0.03) 4px),
+        repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(107, 85, 54, 0.02) 2px,
+            rgba(107, 85, 54, 0.02) 4px);
+    opacity: 0;
+    animation: fadeInTexture 1s ease-out 3.5s forwards;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+@keyframes fadeInTexture {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pottery Breathing Effect */
+@keyframes breathe {
+
+    0%,
+    100% {
+        transform: scale(1) rotateY(0deg);
+    }
+
+    50% {
+        transform: scale(1.02) rotateY(5deg);
+    }
+}
+
+.craft-svg {
+    animation: breathe 3s ease-in-out 4s infinite;
+}
+
+/* ========================================
+   HANDWRITTEN TYPOGRAPHY
+   ======================================== */
+
+.loader-title-container {
+    margin-bottom: 1.5rem;
+    transform: translateZ(30px);
+}
+
+.handwritten-title {
+    width: 300px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+.handwritten-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    fill: none;
+    stroke: #f5f2ed;
+    stroke-width: 1.5;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: writeText 2s ease-out 0.5s forwards;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes writeText {
+    to {
+        stroke-dashoffset: 0;
+        fill: #f5f2ed;
+    }
+}
+
+/* ========================================
+   CRAFT FACTS WITH CHIME EFFECT
+   ======================================== */
+
+.craft-facts {
+    position: relative;
+    height: 40px;
+    margin: 2rem auto;
+    overflow: hidden;
+    transform: translateZ(20px);
+}
+
+.craft-fact {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    font-style: italic;
+    color: rgba(245, 242, 237, 0.9);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.craft-fact.active {
+    animation: rotateFact 10s ease-in-out infinite;
+}
+
+.craft-fact:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.craft-fact:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.craft-fact:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.craft-fact:nth-child(5) {
+    animation-delay: 8s;
+}
+
+@keyframes rotateFact {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    5%,
+    15% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    20% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+}
+
+/* ========================================
+   PROGRESS PERCENTAGE (SMART LOADING)
+   ======================================== */
+
+.progress-percentage {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(245, 242, 237, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.progress-percentage.visible {
+    opacity: 1;
+}
+
+.percentage-number {
+    font-size: 2rem;
+}
+
+.percentage-symbol {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+/* ========================================
+   WEAVING THREAD PROGRESS
+   ======================================== */
+
+.weave-progress {
+    position: relative;
+    width: 250px;
+    height: 6px;
+    margin: 2rem auto 0;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    transform: translateZ(10px);
+}
+
+.thread {
+    flex: 1;
+    height: 100%;
+    background: rgba(245, 242, 237, 0.2);
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.thread::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(245, 242, 237, 0.4) 0%,
+            rgba(245, 242, 237, 0.9) 50%,
+            rgba(245, 242, 237, 0.4) 100%);
+    transform: translateX(-100%);
+}
+
+.thread-1::before {
+    animation: weaveThread 2s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.thread-2::before {
+    animation: weaveThread 2s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+.thread-3::before {
+    animation: weaveThread 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+@keyframes weaveThread {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .skip-loader,
+    .mute-loader {
+        top: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .skip-loader {
+        right: 1rem;
+    }
+
+    .mute-loader {
+        right: 6rem;
+    }
+
+    .mandala-pattern {
+        width: 400px;
+        height: 400px;
+    }
+
+    .handwritten-title {
+        width: 250px;
+        height: 60px;
+    }
+
+    .handwritten-text {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+
+    .craft-animation {
+        width: 150px;
+        height: 150px;
+    }
+
+    .craft-fact {
+        font-size: 0.95rem;
+    }
+
+    .weave-progress {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .skip-loader span,
+    .mute-loader span {
+        display: none;
+    }
+
+    .skip-loader,
+    .mute-loader {
+        padding: 0.5rem;
+        right: 1rem;
+    }
+
+    .mute-loader {
+        right: 4rem;
+    }
+
+    .mandala-pattern {
+        width: 300px;
+        height: 300px;
+    }
+
+    .handwritten-title {
+        width: 200px;
+        height: 50px;
+    }
+
+    .handwritten-text {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .craft-animation {
+        width: 120px;
+        height: 120px;
+    }
+
+    .craft-fact {
+        font-size: 0.85rem;
+    }
+
+    .weave-progress {
+        width: 150px;
+    }
+
+    .progress-percentage {
+        font-size: 1.2rem;
+    }
+
+    .percentage-number {
+        font-size: 1.5rem;
+    }
+}

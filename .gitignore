@@ -1,0 +1,46 @@
+# Git ignore file for SHRINIX website
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if you add npm later)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files (if you add any)
+.env
+.env.local
+
+# Build files (if you add build process)
+dist/
+build/
+
+# Temporary HTML files
+generate-hash.html
+
+# Local testing files
+test/
+*.test.html
