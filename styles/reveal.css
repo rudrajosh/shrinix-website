@@ -1,0 +1,128 @@
+/* Reveal on Scroll Animations */
+
+/* Base reveal state */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    will-change: opacity, transform;
+}
+
+/* Active state (triggered by JS) */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays for children */
+.reveal-delay-100 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-200 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-300 {
+    transition-delay: 0.3s;
+}
+
+.reveal-delay-400 {
+    transition-delay: 0.4s;
+}
+
+.reveal-delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* Different directions */
+.reveal-left {
+    transform: translateX(-30px);
+}
+
+.reveal-right {
+    transform: translateX(30px);
+}
+
+.reveal-left.active,
+.reveal-right.active {
+    transform: translateX(0);
+}
+
+/* Scale reveal */
+.reveal-scale {
+    transform: scale(0.9);
+}
+
+.reveal-scale.active {
+    transform: scale(1);
+}
+
+/* Rotate reveal */
+.reveal-rotate {
+    transform: rotate(5deg) translateY(30px);
+}
+
+.reveal-rotate.active {
+    transform: rotate(0) translateY(0);
+}
+
+/* ========================================
+   LANDING PAGE INTRO REVEAL
+   Syncs with Loader (6s duration)
+   ======================================== */
+
+/* Base Intro Animation */
+.intro-element {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: introFadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes introFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered Delays (Starting after loader finishes at 6s) */
+.intro-delay-1 {
+    animation-delay: 6.2s;
+}
+
+/* Title */
+.intro-delay-2 {
+    animation-delay: 6.4s;
+}
+
+/* Subtitle */
+.intro-delay-3 {
+    animation-delay: 6.6s;
+}
+
+/* Buttons */
+
+/* Clip Text Reveal Effect for Title */
+.intro-clip-text {
+    opacity: 0;
+    transform: translateY(100%);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    animation: introClipReveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes introClipReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.intro-clip-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    /* Space for descenders */
+    margin-bottom: -0.5rem;
+}

@@ -3,10 +3,10 @@ const productsData = {
     bedroom: [
         {
             id: 'bed-01',
-            name: 'Royal Wooden Bed',
+            name: 'Single Bed With Storage (Honey Finish)',
             category: 'bedroom',
             subcategory: 'Beds',
-            price: '₹45,000',
+            price: '₹21,000',
             image: 'images/products/Bed-01/Gemini_Generated_Image_283py7283py7283p.png',
             gallery: [
                 'images/products/Bed-01/Gemini_Generated_Image_283py7283py7283p.png',
@@ -14,14 +14,19 @@ const productsData = {
                 'images/products/Bed-01/Gemini_Generated_Image_ergb43ergb43ergb.png',
                 'images/products/Bed-01/Gemini_Generated_Image_ysng6tysng6tysng.png'
             ],
-            description: 'Luxurious handcrafted wooden bed with intricate carvings and premium finish.'
+            description: 'Luxurious handcrafted wooden bed with intricate carvings and premium finish.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '88L x 39W x 33H',
+            mattressSize: '78L X 36',
+            brand: 'SHRINIX'
         },
         {
             id: 'bed-02',
-            name: 'Modern Wooden Bed',
+            name: 'Sheesham Wood King Size Bed Without Storage (Honey Finish)',
             category: 'bedroom',
             subcategory: 'Beds',
-            price: '₹42,000',
+            price: '₹35,000',
             image: 'images/products/Bed-02/Gemini_Generated_Image_7rszhv7rszhv7rsz.png',
             gallery: [
                 'images/products/Bed-02/Gemini_Generated_Image_7rszhv7rszhv7rsz.png',
@@ -29,14 +34,19 @@ const productsData = {
                 'images/products/Bed-02/Gemini_Generated_Image_ljxzdwljxzdwljxz.png',
                 'images/products/Bed-02/Gemini_Generated_Image_mccghkmccghkmccg.png'
             ],
-            description: 'Contemporary design wooden bed with clean lines and elegant aesthetics.'
+            description: 'Contemporary design wooden bed with clean lines and elegant aesthetics.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '82L x 75W x 42H',
+            mattressSize: '78L x 72W',
+            brand: 'SHRINIX'
         },
         {
             id: 'bedside-01',
-            name: 'Bedside Table',
+            name: 'Bedside Table (Honey Finish)',
             category: 'bedroom',
             subcategory: 'Nightstands',
-            price: '₹8,500',
+            price: '₹7,000',
             image: 'images/products/Bedside-01/Gemini_Generated_Image_anu47zanu47zanu4.png',
             gallery: [
                 'images/products/Bedside-01/Gemini_Generated_Image_anu47zanu47zanu4.png',
@@ -44,14 +54,18 @@ const productsData = {
                 'images/products/Bedside-01/Gemini_Generated_Image_jsoh4ljsoh4ljsoh.png',
                 'images/products/Bedside-01/Gemini_Generated_Image_pth8okpth8okpth8.png'
             ],
-            description: 'Compact bedside table with drawer and open shelf for essentials.'
+            description: 'Compact bedside table with drawer and open shelf for essentials.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '16L x 16W x 17H',
+            brand: 'SHRINIX'
         },
         {
             id: 'bed-03',
-            name: 'Luxury Upholstered Bed',
+            name: 'Sheesham Wood Bed With Storage (King Size, Walnut/Honey Finish)',
             category: 'bedroom',
             subcategory: 'Beds',
-            price: '₹55,000',
+            price: '₹60,000',
             image: 'images/products/Bed-03/Gemini_Generated_Image_7ncxe47ncxe47ncx.png',
             gallery: [
                 'images/products/Bed-03/Gemini_Generated_Image_7ncxe47ncxe47ncx.png',
@@ -59,14 +73,19 @@ const productsData = {
                 'images/products/Bed-03/Gemini_Generated_Image_h4r90eh4r90eh4r9.png',
                 'images/products/Bed-03/Gemini_Generated_Image_uy6t72uy6t72uy6t.png'
             ],
-            description: 'Premium upholstered bed with tufted headboard and storage.'
+            description: 'Premium upholstered bed with tufted headboard and storage.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '87 L x 75 W x 43 H',
+            mattressSize: '78L x 72W',
+            brand: 'SHRINIX'
         },
         {
             id: 'bed-04',
-            name: 'Minimalist Platform Bed',
+            name: 'Sheesham Wood Bed with Cane Detailing (King Size, Teak Finish)',
             category: 'bedroom',
             subcategory: 'Beds',
-            price: '₹38,000',
+            price: '₹50,000',
             image: 'images/products/Bed-04/Gemini_Generated_Image_lf23y3lf23y3lf23.png',
             gallery: [
                 'images/products/Bed-04/Gemini_Generated_Image_lf23y3lf23y3lf23.png',
@@ -74,14 +93,19 @@ const productsData = {
                 'images/products/Bed-04/Gemini_Generated_Image_px9thrpx9thrpx9t.png',
                 'images/products/Bed-04/Gemini_Generated_Image_s6afv4s6afv4s6af.png'
             ],
-            description: 'Sleek platform bed with low profile design and wood finish.'
+            description: 'Sleek platform bed with low profile design and wood finish.',
+            material: 'Sheesham Wood',
+            finish: 'Teak Finish',
+            dimensions: '87 L x 75 W x 43 H',
+            mattressSize: '78L x 72W',
+            brand: 'SHRINIX'
         },
         {
             id: 'bed-05',
-            name: 'Classic Poster Bed',
+            name: 'Sheesham Wood Queen Size Bed Without Storage (Honey Finish)',
             category: 'bedroom',
             subcategory: 'Beds',
-            price: '₹62,000',
+            price: '₹60,000',
             image: 'images/products/Bed-05/Gemini_Generated_Image_42ef1k42ef1k42ef.png',
             gallery: [
                 'images/products/Bed-05/Gemini_Generated_Image_42ef1k42ef1k42ef.png',
@@ -89,14 +113,19 @@ const productsData = {
                 'images/products/Bed-05/Gemini_Generated_Image_jwfjlgjwfjlgjwfj.png',
                 'images/products/Bed-05/Gemini_Generated_Image_opmw7oopmw7oopmw.png'
             ],
-            description: 'Elegant four-poster bed with detailed craftsmanship.'
+            description: 'Elegant four-poster bed with detailed craftsmanship.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '82L x 75W x 42H',
+            mattressSize: '78L x 72W',
+            brand: 'SHRINIX'
         },
         {
             id: 'bed-06',
-            name: 'Contemporary Storage Bed',
+            name: 'Sheesham Wood Bed with Upholstered Headboard',
             category: 'bedroom',
             subcategory: 'Beds',
-            price: '₹48,000',
+            price: '₹58,000',
             image: 'images/products/Bed-06/Gemini_Generated_Image_axt97qaxt97qaxt9.png',
             gallery: [
                 'images/products/Bed-06/Gemini_Generated_Image_axt97qaxt97qaxt9.png',
@@ -104,14 +133,18 @@ const productsData = {
                 'images/products/Bed-06/Gemini_Generated_Image_ja6bnrja6bnrja6b.png',
                 'images/products/Bed-06/Gemini_Generated_Image_wk7imwwk7imwwk7i.png'
             ],
-            description: 'Modern bed with hydraulic storage and integrated lighting.'
+            description: 'Modern bed with hydraulic storage and integrated lighting.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '81 L x 63 W x 47 H',
+            brand: 'SHRINIX'
         },
         {
             id: 'bed-07',
-            name: 'Royal Canopy Bed',
+            name: 'Single Bed Without Storage (Honey Finish)',
             category: 'bedroom',
             subcategory: 'Beds',
-            price: '₹75,000',
+            price: '₹25,000',
             image: 'images/products/Bed-07/Gemini_Generated_Image_5sia265sia265sia.png',
             gallery: [
                 'images/products/Bed-07/Gemini_Generated_Image_5sia265sia265sia.png',
@@ -119,16 +152,20 @@ const productsData = {
                 'images/products/Bed-07/Gemini_Generated_Image_o9qt46o9qt46o9qt.png',
                 'images/products/Bed-07/Gemini_Generated_Image_rpqclurpqclurpqc.png'
             ],
-            description: 'Majestic canopy bed for a grand bedroom statement.'
+            description: 'Majestic canopy bed for a grand bedroom statement.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '81 L x 38 W x 13 H',
+            brand: 'SHRINIX'
         }
     ],
     'living-room': [
         {
             id: 'cabinet-01',
-            name: 'Premium Display Cabinet',
+            name: 'Bar Cabinet',
             category: 'living-room',
             subcategory: 'Cabinets',
-            price: '₹32,000',
+            price: '₹38,000',
             image: 'images/products/Cabinet-01/front view1.png',
             gallery: [
                 'images/products/Cabinet-01/front view1.png',
@@ -136,14 +173,18 @@ const productsData = {
                 'images/products/Cabinet-01/right view1.png',
                 'images/products/Cabinet-01/top view 1.png'
             ],
-            description: 'Elegant display cabinet with glass panels and organized storage.'
+            description: 'Elegant display cabinet with glass panels and organized storage.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '36L x 20W x 43H',
+            brand: 'SHRINIX'
         },
         {
             id: 'cabinet-02',
-            name: 'Classic Wooden Cabinet',
+            name: 'Orden Storage Cabinet',
             category: 'living-room',
             subcategory: 'Cabinets',
-            price: '₹28,000',
+            price: '₹25,000',
             image: 'images/products/Cabinet-02/front view1.png',
             gallery: [
                 'images/products/Cabinet-02/front view1.png',
@@ -151,14 +192,18 @@ const productsData = {
                 'images/products/Cabinet-02/right view1.png',
                 'images/products/Cabinet-02/top view1.png'
             ],
-            description: 'Traditional wooden cabinet with ample storage space.'
+            description: 'Traditional wooden cabinet with ample storage space.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '60L x 18W x 30H',
+            brand: 'SHRINIX'
         },
         {
             id: 'cabinet-03',
-            name: 'Contemporary Cabinet',
+            name: 'Console Table',
             category: 'living-room',
             subcategory: 'Cabinets',
-            price: '₹35,000',
+            price: '₹12,000',
             image: 'images/products/Cabinet-03/Gemini_Generated_Image_22c4kp22c4kp22c4.png',
             gallery: [
                 'images/products/Cabinet-03/Gemini_Generated_Image_22c4kp22c4kp22c4.png',
@@ -166,14 +211,18 @@ const productsData = {
                 'images/products/Cabinet-03/Gemini_Generated_Image_nvm3qmnvm3qmnvm3.png',
                 'images/products/Cabinet-03/Gemini_Generated_Image_nzo0dhnzo0dhnzo0.png'
             ],
-            description: 'Modern cabinet design perfect for contemporary living spaces.'
+            description: 'Modern cabinet design perfect for contemporary living spaces.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '42L x 14W x 36H',
+            brand: 'SHRINIX'
         },
         {
             id: 'cabinet-04',
-            name: 'Luxury Storage Cabinet',
+            name: 'Storage Cabinet',
             category: 'living-room',
             subcategory: 'Cabinets',
-            price: '₹38,000',
+            price: '₹23,000',
             image: 'images/products/Cabinet-04/Gemini_Generated_Image_ejkzmgejkzmgejkz.png',
             gallery: [
                 'images/products/Cabinet-04/Gemini_Generated_Image_ejkzmgejkzmgejkz.png',
@@ -181,14 +230,18 @@ const productsData = {
                 'images/products/Cabinet-04/Gemini_Generated_Image_rs02z2rs02z2rs02.png',
                 'images/products/Cabinet-04/Gemini_Generated_Image_woxc54woxc54woxc.png'
             ],
-            description: 'Premium quality cabinet with sophisticated design and finish.'
+            description: 'Premium quality cabinet with sophisticated design and finish.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '36L x 16W x 42H',
+            brand: 'SHRINIX'
         },
         {
             id: 'sofa-01',
-            name: 'Luxury Velvet Sofa',
+            name: 'Wooden Couch Diwan Sofa Settee for Living Room and Office | Three 3-Person Sofa',
             category: 'living-room',
             subcategory: 'Sofas',
-            price: '₹45,000',
+            price: '₹28,000',
             image: 'images/products/Sofa-01/Gemini_Generated_Image_7l0iaw7l0iaw7l0i.png',
             gallery: [
                 'images/products/Sofa-01/Gemini_Generated_Image_7l0iaw7l0iaw7l0i.png',
@@ -196,14 +249,18 @@ const productsData = {
                 'images/products/Sofa-01/Gemini_Generated_Image_w16cqrw16cqrw16c.png',
                 'images/products/Sofa-01/Gemini_Generated_Image_ykd3f6ykd3f6ykd3.png'
             ],
-            description: 'Plush velvet sofa offering superior comfort and style.'
+            description: 'Plush velvet sofa offering superior comfort and style.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '36L x 72W x 24H',
+            brand: 'SHRINIX'
         },
         {
             id: 'sofa-02',
-            name: 'Modern Leather Sofa',
+            name: 'Sheesham Wood 3 Seater Sofa Set Without Storage for Living Room Furniture',
             category: 'living-room',
             subcategory: 'Sofas',
-            price: '₹55,000',
+            price: '₹30,000',
             image: 'images/products/Sofa-02/Gemini_Generated_Image_3p3wsm3p3wsm3p3w.png',
             gallery: [
                 'images/products/Sofa-02/Gemini_Generated_Image_3p3wsm3p3wsm3p3w.png',
@@ -211,14 +268,18 @@ const productsData = {
                 'images/products/Sofa-02/Gemini_Generated_Image_ioo2weioo2weioo2.png',
                 'images/products/Sofa-02/Gemini_Generated_Image_sqv5xxsqv5xxsqv5.png'
             ],
-            description: 'Genuine leather sofa with clean lines and durable build.'
+            description: 'Genuine leather sofa with clean lines and durable build.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '36L x 72W x 30H',
+            brand: 'SHRINIX'
         },
         {
             id: 'sofa-set-1',
-            name: 'Royal Sofa Set',
+            name: 'Sheesham Wood 5-Seater Sofa Set (3+1+1)',
             category: 'living-room',
             subcategory: 'Sofas',
-            price: '₹95,000',
+            price: '₹65,000',
             image: 'images/products/Sofa-set-1/Gemini_Generated_Image_dsljaodsljaodslj.png',
             gallery: [
                 'images/products/Sofa-set-1/Gemini_Generated_Image_dsljaodsljaodslj.png',
@@ -226,16 +287,20 @@ const productsData = {
                 'images/products/Sofa-set-1/Gemini_Generated_Image_ov2owzov2owzov2o.png',
                 'images/products/Sofa-set-1/Gemini_Generated_Image_rjyxllrjyxllrjyx.png'
             ],
-            description: 'Grand sofa set including 3-seater and 2-seater for large living rooms.'
+            description: 'Grand sofa set including 3-seater and 2-seater for large living rooms.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '72L x 28W x 33H',
+            brand: 'SHRINIX'
         }
     ],
     dining: [
         {
             id: 'table-01',
-            name: 'Classic Dining Table',
+            name: 'Console Table',
             category: 'dining',
             subcategory: 'Dining Tables',
-            price: '₹45,000',
+            price: '₹11,000',
             image: 'images/products/Table-01/Gemini_Generated_Image_d6kbxfd6kbxfd6kb.png',
             gallery: [
                 'images/products/Table-01/Gemini_Generated_Image_d6kbxfd6kbxfd6kb.png',
@@ -243,14 +308,18 @@ const productsData = {
                 'images/products/Table-01/Gemini_Generated_Image_powwehpowwehpoww.png',
                 'images/products/Table-01/Gemini_Generated_Image_qn713nqn713nqn71.png'
             ],
-            description: 'Elegant dining table crafted from premium wood with timeless design.'
+            description: 'Elegant dining table crafted from premium wood with timeless design.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '36L x 12W x 30H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-02',
-            name: 'Modern Dining Table',
+            name: 'Study Table with Drawer & Cabinet',
             category: 'dining',
             subcategory: 'Dining Tables',
-            price: '₹42,000',
+            price: '₹21,000',
             image: 'images/products/Table-02/front view2.png',
             gallery: [
                 'images/products/Table-02/front view2.png',
@@ -258,14 +327,18 @@ const productsData = {
                 'images/products/Table-02/right view2.png',
                 'images/products/Table-02/Gemini_Generated_Image_z67moiz67moiz67m.png'
             ],
-            description: 'Contemporary dining table with sleek lines and sturdy construction.'
+            description: 'Contemporary dining table with sleek lines and sturdy construction.',
+            material: 'Sheesham Wood',
+            finish: 'Wallnut Finish',
+            dimensions: '42L x 22W x 30H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-03',
-            name: 'Royal Dining Table',
+            name: 'Center Table / Display Unit / Coffee Table',
             category: 'dining',
             subcategory: 'Dining Tables',
-            price: '₹52,000',
+            price: '₹10,000',
             image: 'images/products/Table-03/Gemini_Generated_Image_1qtm0j1qtm0j1qtm.png',
             gallery: [
                 'images/products/Table-03/Gemini_Generated_Image_1qtm0j1qtm0j1qtm.png',
@@ -273,14 +346,18 @@ const productsData = {
                 'images/products/Table-03/Gemini_Generated_Image_9pkz7w9pkz7w9pkz.png',
                 'images/products/Table-03/Gemini_Generated_Image_nee0nlnee0nlnee0.png'
             ],
-            description: 'Luxurious dining table with intricate details and royal aesthetics.'
+            description: 'Luxurious dining table with intricate details and royal aesthetics.',
+            material: 'Sheesham Wood',
+            finish: 'Wallnut Finish',
+            dimensions: '28L x 16W x 28H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-04',
-            name: 'Compact Dining Table',
+            name: 'Metal Base Sheesham Wood Tv Unit with Drawers and Cabinets',
             category: 'dining',
             subcategory: 'Dining Tables',
-            price: '₹35,000',
+            price: '₹26,000',
             image: 'images/products/Table-04/Gemini_Generated_Image_d494pid494pid494.png',
             gallery: [
                 'images/products/Table-04/Gemini_Generated_Image_d494pid494pid494.png',
@@ -288,14 +365,18 @@ const productsData = {
                 'images/products/Table-04/Gemini_Generated_Image_m5l5lam5l5lam5l5.png',
                 'images/products/Table-04/Gemini_Generated_Image_qvb2n7qvb2n7qvb2.png'
             ],
-            description: 'Space-saving dining table perfect for smaller dining areas.'
+            description: 'Space-saving dining table perfect for smaller dining areas.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '67L x 18W x 24H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-05',
-            name: 'Executive Dining Table',
+            name: 'Sheesham Wood Tv Unit with Cupboards drawres',
             category: 'dining',
             subcategory: 'Dining Tables',
-            price: '₹48,000',
+            price: '₹25,000',
             image: 'images/products/Table-05/Gemini_Generated_Image_81hbk281hbk281hb.png',
             gallery: [
                 'images/products/Table-05/Gemini_Generated_Image_81hbk281hbk281hb.png',
@@ -303,14 +384,18 @@ const productsData = {
                 'images/products/Table-05/Gemini_Generated_Image_8hou6l8hou6l8hou.png',
                 'images/products/Table-05/Gemini_Generated_Image_zgbvgozgbvgozgbv.png'
             ],
-            description: 'Premium dining table with executive styling and superior craftsmanship.'
+            description: 'Premium dining table with executive styling and superior craftsmanship.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '67L x 16W x 20H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-06',
-            name: 'Family Dining Table',
+            name: 'Console Table',
             category: 'dining',
             subcategory: 'Dining Tables',
-            price: '₹46,000',
+            price: '₹11,000',
             image: 'images/products/Table-06/Gemini_Generated_Image_9nwdl79nwdl79nwd.png',
             gallery: [
                 'images/products/Table-06/Gemini_Generated_Image_9nwdl79nwdl79nwd.png',
@@ -318,14 +403,18 @@ const productsData = {
                 'images/products/Table-06/Gemini_Generated_Image_hcukjohcukjohcuk.png',
                 'images/products/Table-06/Gemini_Generated_Image_sot9hmsot9hmsot9.png'
             ],
-            description: 'Spacious dining table ideal for family gatherings and celebrations.'
+            description: 'Spacious dining table ideal for family gatherings and celebrations.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '36L x 12W x 34H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-07',
-            name: 'Designer Dining Table',
+            name: 'Modern Shoe Rack Bench',
             category: 'dining',
             subcategory: 'Dining Tables',
-            price: '₹55,000',
+            price: '₹14,000',
             image: 'images/products/Table-07/Gemini_Generated_Image_1i97yq1i97yq1i97.png',
             gallery: [
                 'images/products/Table-07/Gemini_Generated_Image_1i97yq1i97yq1i97.png',
@@ -333,14 +422,18 @@ const productsData = {
                 'images/products/Table-07/Gemini_Generated_Image_r9w8j1r9w8j1r9w8.png',
                 'images/products/Table-07/Gemini_Generated_Image_s3twcss3twcss3tw.png'
             ],
-            description: 'Unique designer dining table with artistic elements and premium finish.'
+            description: 'Unique designer dining table with artistic elements and premium finish.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '45L x 16W x 21.5H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-set-01',
-            name: 'Complete Dining Set',
+            name: 'Nest of Table (Set of Three)',
             category: 'dining',
             subcategory: 'Dining Sets',
-            price: '₹75,000',
+            price: '₹7,000',
             image: 'images/products/Table-Set-01/front view.png',
             gallery: [
                 'images/products/Table-Set-01/front view.png',
@@ -348,14 +441,18 @@ const productsData = {
                 'images/products/Table-Set-01/right view.png',
                 'images/products/Table-Set-01/Top view.png'
             ],
-            description: 'Complete dining set with table and matching accessories for a cohesive look.'
+            description: 'Complete dining set with table and matching accessories for a cohesive look.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '20L x 16W x 20H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-chair-set',
-            name: 'Premium Table & Chair Set',
+            name: '4 Seater Dinning Set',
             category: 'dining',
             subcategory: 'Dining Sets',
-            price: '₹85,000',
+            price: '₹35,000',
             image: 'images/products/Table-chair-set/Gemini_Generated_Image_114vjb114vjb114v.png',
             gallery: [
                 'images/products/Table-chair-set/Gemini_Generated_Image_114vjb114vjb114v.png',
@@ -365,7 +462,11 @@ const productsData = {
                 'images/products/Table-chair-set/Gemini_Generated_Image_gue495gue495gue4.png',
                 'images/products/Table-chair-set/Gemini_Generated_Image_ohxeyyohxeyyohxe.png'
             ],
-            description: 'Luxurious dining set with table and matching chairs, perfect for elegant dining.'
+            description: 'Luxurious dining set with table and matching chairs, perfect for elegant dining.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '36L x 36W x 30H',
+            brand: 'SHRINIX'
         },
         {
             id: 'table-08',
@@ -414,10 +515,10 @@ const productsData = {
         },
         {
             id: 'dinner-table-set-01',
-            name: 'Family Dining Set',
+            name: 'Premium Sheesham Wood 6 Seater Dining Set with Cushioned Chair (Honey Finish)',
             category: 'dining',
             subcategory: 'Dining Sets',
-            price: '₹68,000',
+            price: '₹45,000',
             image: 'images/products/Dinner-table-set-01/Gemini_Generated_Image_g40qbog40qbog40q.png',
             gallery: [
                 'images/products/Dinner-table-set-01/Gemini_Generated_Image_g40qbog40qbog40q.png',
@@ -425,7 +526,11 @@ const productsData = {
                 'images/products/Dinner-table-set-01/Gemini_Generated_Image_lciik8lciik8lcii.png',
                 'images/products/Dinner-table-set-01/Gemini_Generated_Image_uhvylguhvylguhvy.png'
             ],
-            description: 'Complete dining set for 6, focusing on comfort and durability.'
+            description: 'Complete dining set for 6, focusing on comfort and durability.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: 'TABLE 59 L x 36 W x 30 H | CHAIR 18 L x 18 W x 35 H',
+            brand: 'SHRINIX'
         }
     ],
     study: [
@@ -434,10 +539,10 @@ const productsData = {
     storage: [
         {
             id: 'shelf-01',
-            name: 'Modern Wall Shelf',
+            name: 'Sheesham Wood Corner Book Shelf',
             category: 'storage',
             subcategory: 'Shelves',
-            price: '₹12,000',
+            price: '₹9,500',
             image: 'images/products/Shelf-01/Gemini_Generated_Image_iddc43iddc43iddc.png',
             gallery: [
                 'images/products/Shelf-01/Gemini_Generated_Image_iddc43iddc43iddc.png',
@@ -445,14 +550,18 @@ const productsData = {
                 'images/products/Shelf-01/Gemini_Generated_Image_pwsuxipwsuxipwsu.png',
                 'images/products/Shelf-01/Gemini_Generated_Image_ybl43oybl43oybl4.png'
             ],
-            description: 'Stylish wall shelf with contemporary design for books and decor.'
+            description: 'Stylish wall shelf with contemporary design for books and decor.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '12L x 12W x 64H',
+            brand: 'SHRINIX'
         },
         {
             id: 'shelf-02',
-            name: 'Classic Bookshelf',
+            name: 'Home Temple',
             category: 'storage',
             subcategory: 'Shelves',
-            price: '₹18,000',
+            price: '₹16,000',
             image: 'images/products/Shelf-02/Gemini_Generated_Image_47rbow47rbow47rb.png',
             gallery: [
                 'images/products/Shelf-02/Gemini_Generated_Image_47rbow47rbow47rb.png',
@@ -460,14 +569,18 @@ const productsData = {
                 'images/products/Shelf-02/Gemini_Generated_Image_uiyniluiyniluiyn.png',
                 'images/products/Shelf-02/Gemini_Generated_Image_xhrutzxhrutzxhru.png'
             ],
-            description: 'Traditional bookshelf with multiple tiers for organized storage.'
+            description: 'Traditional bookshelf with multiple tiers for organized storage.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '28L x 16W x 45H',
+            brand: 'SHRINIX'
         },
         {
             id: 'shelf-03',
-            name: 'Display Shelf Unit',
+            name: 'Shoe Rack with shelf',
             category: 'storage',
             subcategory: 'Shelves',
-            price: '₹22,000',
+            price: '₹6,000',
             image: 'images/products/Shelf-03/Gemini_Generated_Image_atkyveatkyveatky.png',
             gallery: [
                 'images/products/Shelf-03/Gemini_Generated_Image_atkyveatkyveatky.png',
@@ -475,16 +588,20 @@ const productsData = {
                 'images/products/Shelf-03/Gemini_Generated_Image_sp4o08sp4o08sp4o.png',
                 'images/products/Shelf-03/Gemini_Generated_Image_y0p255y0p255y0p2.png'
             ],
-            description: 'Versatile display shelf unit perfect for showcasing collectibles.'
+            description: 'Versatile display shelf unit perfect for showcasing collectibles.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '30L x 14W x 28H',
+            brand: 'SHRINIX'
         }
     ],
     decor: [
         {
             id: 'mirror-01',
-            name: 'Decorative Wall Mirror',
+            name: 'Sheesham Wood Full Length Dressing Mirror (Floor Rested)',
             category: 'decor',
             subcategory: 'Mirrors',
-            price: '₹15,000',
+            price: '₹7,000',
             image: 'images/products/Mirror 01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
             gallery: [
                 'images/products/Mirror 01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
@@ -492,14 +609,18 @@ const productsData = {
                 'images/products/Mirror 01/Gemini_Generated_Image_e18k70e18k70e18k.png',
                 'images/products/Mirror 01/Gemini_Generated_Image_wzew5vwzew5vwzew.png'
             ],
-            description: 'Ornate wooden frame mirror perfect for adding elegance to any room.'
+            description: 'Ornate wooden frame mirror perfect for adding elegance to any room.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '66L x 20W',
+            brand: 'SHRINIX'
         },
         {
             id: 'mirror-02',
-            name: 'Modern Round Mirror',
+            name: 'Sheesham Wood Full Length Dressing Mirror (Wall Rested)',
             category: 'decor',
             subcategory: 'Mirrors',
-            price: '₹9,500',
+            price: '₹15,000',
             image: 'images/products/Mirror 02/Gemini_Generated_Image_d827mcd827mcd827.png',
             gallery: [
                 'images/products/Mirror 02/Gemini_Generated_Image_d827mcd827mcd827.png',
@@ -507,7 +628,11 @@ const productsData = {
                 'images/products/Mirror 02/Gemini_Generated_Image_fnzwibfnzwibfnzw.png',
                 'images/products/Mirror 02/Gemini_Generated_Image_qib5taqib5taqib5.png'
             ],
-            description: 'Sleek round mirror with minimalist frame for contemporary homes.'
+            description: 'Sleek round mirror with minimalist frame for contemporary homes.',
+            material: 'Sheesham Wood',
+            finish: 'Honey Finish',
+            dimensions: '24L x 15W x 54H',
+            brand: 'SHRINIX'
         }
     ]
 };

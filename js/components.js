@@ -8,10 +8,12 @@ function renderHomePage() {
                 <source src="video.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">SHRINIX</h1>
-                <p class="hero-subtitle">Crafting Timeless Wooden Elegance</p>
-                <div class="hero-buttons">
+            <div class="hero-content" style="animation: none; opacity: 1;">
+                <h1 class="hero-title" style="overflow: hidden; line-height: 1.2;">
+                    <span class="intro-clip-text intro-delay-1" style="display: block;">SHRINIX</span>
+                </h1>
+                <p class="hero-subtitle intro-element intro-delay-2">Crafting Timeless Wooden Elegance</p>
+                <div class="hero-buttons intro-element intro-delay-3">
                     <button class="btn btn-primary" onclick="router.navigate('products')">
                         Explore Products
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -27,13 +29,13 @@ function renderHomePage() {
 
         <section class="section categories-section scroll-animate">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal">
                     <h2 class="section-title">Explore Our Collections</h2>
                     <p class="section-description">Discover premium wooden furniture for every room</p>
                 </div>
                 <div class="categories-grid">
-                    ${categories.map(cat => `
-                        <div class="category-card" onclick="router.navigate('category/${cat.id}')">
+                    ${categories.map((cat, index) => `
+                        <div class="category-card reveal reveal-delay-${(index % 3) * 100}" onclick="router.navigate('category/${cat.id}')">
                             <img src="${cat.image}" alt="${cat.name}" class="category-card-image">
                             <div class="category-card-overlay">
                                 <h3 class="category-card-title">${cat.name}</h3>
@@ -49,22 +51,22 @@ function renderHomePage() {
             <div class="container" style="text-align: center;">
                 <h2 class="section-title">Why Choose SHRINIX?</h2>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div>
+                    <div class="reveal reveal-delay-100">
                         <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">🌳</div>
                         <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Premium Wood</h3>
                         <p>Sourced from sustainable forests</p>
                     </div>
-                    <div>
+                    <div class="reveal reveal-delay-200">
                         <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">🛠️</div>
                         <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Expert Craftsmanship</h3>
                         <p>Handcrafted by skilled artisans</p>
                     </div>
-                    <div>
+                    <div class="reveal reveal-delay-300">
                         <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">✨</div>
                         <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Custom Designs</h3>
                         <p>Tailored to your preferences</p>
                     </div>
-                    <div>
+                    <div class="reveal reveal-delay-400">
                         <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">📦</div>
                         <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Safe Delivery</h3>
                         <p>Secure packaging and delivery</p>
@@ -106,7 +108,7 @@ function renderHomePage() {
                 </div>
                 
                 <div class="testimonials-grid">
-                    <div class="testimonial-card">
+                    <div class="testimonial-card reveal reveal-delay-100">
                         <div class="testimonial-quote">"</div>
                         <div class="testimonial-header">
                             <img src="https://i.pravatar.cc/150?img=12" alt="Rajesh Kumar" class="testimonial-avatar">
@@ -128,7 +130,7 @@ function renderHomePage() {
                         </p>
                     </div>
 
-                    <div class="testimonial-card">
+                    <div class="testimonial-card reveal reveal-delay-200">
                         <div class="testimonial-quote">"</div>
                         <div class="testimonial-header">
                             <img src="https://i.pravatar.cc/150?img=47" alt="Priya Sharma" class="testimonial-avatar">
@@ -150,7 +152,7 @@ function renderHomePage() {
                         </p>
                     </div>
 
-                    <div class="testimonial-card">
+                    <div class="testimonial-card reveal reveal-delay-300">
                         <div class="testimonial-quote">"</div>
                         <div class="testimonial-header">
                             <img src="https://i.pravatar.cc/150?img=33" alt="Amit Patel" class="testimonial-avatar">
@@ -279,8 +281,8 @@ function renderProductsPage(filterCategory = 'all') {
                 </div>
 
                 <div class="products-grid">
-                    ${filteredProducts.map(product => `
-                        <div class="product-card">
+                    ${filteredProducts.map((product, index) => `
+                        <div class="product-card reveal reveal-delay-${(index % 5) * 100}">
                             <img src="${product.image}" alt="${product.name}" class="product-image">
                             <div class="product-info">
                                 <div class="product-category">${product.category.replace('-', ' ')}</div>
@@ -390,11 +392,14 @@ function renderProductDetailPage(productId) {
                         <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: #666;">${product.description}</p>
                         
                         <div style="margin-bottom: 2rem; padding: 1.5rem; background: var(--secondary); border-radius: 8px;">
-                            <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary);">Product Features</h3>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary);">Product Specifications</h3>
                             <ul style="list-style: none; padding: 0;">
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">✓ Premium quality wood</li>
+                                ${product.material ? `<li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);"><strong>Material:</strong> ${product.material}</li>` : ''}
+                                ${product.finish ? `<li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);"><strong>Finish:</strong> ${product.finish}</li>` : ''}
+                                ${product.dimensions ? `<li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);"><strong>Dimensions:</strong> ${product.dimensions}</li>` : ''}
+                                ${product.mattressSize ? `<li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);"><strong>Mattress Size:</strong> ${product.mattressSize}</li>` : ''}
+                                ${product.brand ? `<li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);"><strong>Brand:</strong> ${product.brand}</li>` : ''}
                                 <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">✓ Handcrafted by experts</li>
-                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">✓ Durable construction</li>
                                 <li style="padding: 0.5rem 0;">✓ Customization available</li>
                             </ul>
                         </div>

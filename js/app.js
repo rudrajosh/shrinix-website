@@ -79,6 +79,10 @@ function renderPage(html) {
     if (window.scrollAnimations) {
         window.scrollAnimations.refresh();
     }
+    // Re-initialize reveal animations
+    if (window.initRevealAnimations) {
+        window.initRevealAnimations();
+    }
 }
 
 // Initialize premium features after app loads
