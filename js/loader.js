@@ -117,8 +117,12 @@
     }
 
     function updateMuteButton() {
+        if (!muteButton) return;
+
         const soundOn = muteButton.querySelector('.sound-on');
         const soundOff = muteButton.querySelector('.sound-off');
+
+        if (!soundOn || !soundOff) return;
 
         if (state.isMuted) {
             soundOn.classList.add('hidden');

@@ -651,5 +651,9 @@ function handleContactSubmit(e) {
 // Product Filter
 function filterProducts(category) {
     window.currentFilter = category;
-    document.getElementById('app').innerHTML = renderProductsPage(category);
+    if (typeof renderPage === 'function') {
+        renderPage(renderProductsPage(category));
+    } else {
+        document.getElementById('app').innerHTML = renderProductsPage(category);
+    }
 }

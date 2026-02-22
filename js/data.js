@@ -602,12 +602,12 @@ const productsData = {
             category: 'decor',
             subcategory: 'Mirrors',
             price: '₹7,000',
-            image: 'images/products/Mirror 01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
+            image: 'images/products/Mirror-01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
             gallery: [
-                'images/products/Mirror 01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
-                'images/products/Mirror 01/Gemini_Generated_Image_7veyvv7veyvv7vey.png',
-                'images/products/Mirror 01/Gemini_Generated_Image_e18k70e18k70e18k.png',
-                'images/products/Mirror 01/Gemini_Generated_Image_wzew5vwzew5vwzew.png'
+                'images/products/Mirror-01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
+                'images/products/Mirror-01/Gemini_Generated_Image_7veyvv7veyvv7vey.png',
+                'images/products/Mirror-01/Gemini_Generated_Image_e18k70e18k70e18k.png',
+                'images/products/Mirror-01/Gemini_Generated_Image_wzew5vwzew5vwzew.png'
             ],
             description: 'Ornate wooden frame mirror perfect for adding elegance to any room.',
             material: 'Sheesham Wood',
@@ -621,12 +621,12 @@ const productsData = {
             category: 'decor',
             subcategory: 'Mirrors',
             price: '₹15,000',
-            image: 'images/products/Mirror 02/Gemini_Generated_Image_d827mcd827mcd827.png',
+            image: 'images/products/Mirror-02/Gemini_Generated_Image_d827mcd827mcd827.png',
             gallery: [
-                'images/products/Mirror 02/Gemini_Generated_Image_d827mcd827mcd827.png',
-                'images/products/Mirror 02/Gemini_Generated_Image_elrmcwelrmcwelrm.png',
-                'images/products/Mirror 02/Gemini_Generated_Image_fnzwibfnzwibfnzw.png',
-                'images/products/Mirror 02/Gemini_Generated_Image_qib5taqib5taqib5.png'
+                'images/products/Mirror-02/Gemini_Generated_Image_d827mcd827mcd827.png',
+                'images/products/Mirror-02/Gemini_Generated_Image_elrmcwelrmcwelrm.png',
+                'images/products/Mirror-02/Gemini_Generated_Image_fnzwibfnzwibfnzw.png',
+                'images/products/Mirror-02/Gemini_Generated_Image_qib5taqib5taqib5.png'
             ],
             description: 'Sleek round mirror with minimalist frame for contemporary homes.',
             material: 'Sheesham Wood',
