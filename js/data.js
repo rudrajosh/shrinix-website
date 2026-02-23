@@ -671,7 +671,7 @@ const categories = [
     {
         id: 'decor',
         name: 'Home Decor',
-        image: 'images/products/Mirror 01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
+        image: 'images/products/Mirror-01/Gemini_Generated_Image_3kwmz73kwmz73kwm.png',
         count: productsData.decor.length
     }
 ];
