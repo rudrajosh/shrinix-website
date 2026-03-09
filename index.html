@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/loader-enhanced.css">
@@ -299,6 +299,26 @@
                     </svg>
                     Admin
                 </a>
+            </div>
+
+            <!-- Ambient Audio Control (Artisan UI) -->
+            <div class="ambient-control-wrapper">
+                <div class="ambient-control">
+                    <div class="audio-toggle" id="globalAudioToggle">
+                        <div class="audio-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8" />
+                            </svg>
+                        </div>
+                        <div class="audio-info">
+                            <span class="audio-label">Sound of the Workshop</span>
+                            <div class="audio-visualizer">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

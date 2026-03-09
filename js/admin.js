@@ -2,11 +2,6 @@
 // Store products in localStorage for persistence
 let adminProducts = JSON.parse(localStorage.getItem('adminProducts')) || JSON.parse(JSON.stringify(productsData));
 
-// Authentication is handled by auth.js module
-// Credentials are hashed for security
-// Username: Shrinix
-// Password: shrinix@harish
-
 // Session Configuration
 const SESSION_TIMEOUT = 2 * 60 * 1000; // 30 minutes in milliseconds
 const WARNING_TIME = 1 * 60 * 1000; // Show warning 2 minutes before timeout
